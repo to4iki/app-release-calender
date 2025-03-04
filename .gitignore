@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+
+# Build
+dist
+
+# Test
+coverage
+
+# Cache
+.DS_Store
+
+# Editor
+.vscode/*
+!.vscode/settings.json

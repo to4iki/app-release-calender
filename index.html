@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アプリリリースカレンダー</title>
+    <link rel="stylesheet" href="/src/styles/main.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>アプリリリースカレンダー</h1>
+      </header>
+      <main>
+        <div class="container">
+          <form id="release-form" class="release-form">
+          <div class="form-group">
+            <label for="version">バージョン</label>
+            <input type="text" id="version" name="version" pattern="\d+\.\d+\.\d+" placeholder="例: 1.0.0" required>
+            <small>現在月と翌月のリリースサイクルを表示します</small>
+          </div>
+            <button type="submit">表示</button>
+          </form>
+          <div id="calendar" class="calendar"></div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
